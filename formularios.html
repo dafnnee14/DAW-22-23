@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="general.css">
+
+    <style>
+        /* Selecciona ÚNICAMENTE a los hijos directos del form */
+        form>div {
+            display: flex;
+            justify-content: space-between;
+
+            width: 350px;
+            margin-bottom: 5px;
+        }
+
+        /* Selecciona al div que es el último hijo del form */
+        form div:last-child {
+            justify-content: flex-start;
+        }
+
+        form input, form div button {
+            border: none;
+            border-radius: 4px;
+            background-color: rgb(150, 150, 150);
+            margin-right: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Formularios en HTML</h1>
+
+    <h2>Formulario sencillo</h2>
+
+    <form action="#">
+        <h2>HTML Form</h2>
+        <div>
+            <label for="firstName">First Name: </label>
+            <input type="text" name="firstName" id="" required>
+        </div>
+        <div>
+            <label for="lastName">Last Name: </label>
+            <input type="text" name="lastName" id="">
+        </div>
+        <div>
+            <label for="dateOfBirth">Date of Birth: </label>
+            <input type="date" name="dateOfBirth" id="">
+        </div>
+        <div>
+            <label for="gender">Gender:</label>
+            <div>
+                <input type="radio" name="gender" id="">Male
+                <input type="radio" name="gender" id="">Female
+                <input type="radio" name="gender" id="">Other
+            </div>
+        </div>
+        <div>
+            <label for="vehicles">Owned vehicles:</label>
+            <div>
+                <input type="checkbox" name="vehicles" id="">Car
+                <input type="checkbox" name="vehicles" id="">Motorbike
+                <input type="checkbox" name="vehicles" id="">Bycicle
+            </div>
+        </div>
+        <div>
+            <label for="emailId">Email Id: </label>
+            <input type="email" name="emailId" id="">
+        </div>
+        <div>
+            <label for="mobileNumber">Mobile Number: </label>
+            <input type="number" name="mobileNumber" id="">
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+
+</body>
+
+</html>

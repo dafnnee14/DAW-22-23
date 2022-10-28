@@ -17,22 +17,39 @@
             display: flex;
             justify-content: center;
         }
+
         .left-container {
             width: 60%;
-           
+
         }
+
         .left-container>* {
             height: 50%;
             box-sizing: border-box;
             /* border-box impide que el elemento se sobresalga del límite del padre */
         }
+
         .right-container {
             width: 40%;
             height: 100%;
         }
+
         .right-container aside {
             height: 100%;
             padding: 40px 0;
+        }
+
+        .div-img {
+            background-image: url(https://images.pexels.com/photos/8460376/pexels-photo-8460376.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            height: 100%;
+        }
+
+        .right {
+            padding: 0 10px;
         }
     </style>
 </head>
@@ -57,7 +74,7 @@
                     <h1>Artículo</h1>
                 </article>
             </div>
-    
+
             <div class="right-container">
                 <aside class="container">
                     <h1>Lateral</h1>
@@ -69,6 +86,29 @@
             <h1>Pie de página</h1>
         </footer>
 
+    </div>
+
+    <hr>
+
+    <div class="flex-container" style="height: 500px;">
+        <div class="left-container" width="50%">
+            <div class="div-img"></div>
+        </div>
+        <div class="right-container right" width="50%">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat esse delectus fugiat optio hic veniam quod ut, illo eius voluptatum labore perspiciatis similique quibusdam! Odit perspiciatis est aperiam tenetur pariatur!
+            </p>
+
+            <h1>Lorem, ipsum dolor.</h1>
+
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"
+                stroke="black" stroke-width="1.75" 
+                >
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+            </p>
+        </div>
     </div>
 
 </body>
