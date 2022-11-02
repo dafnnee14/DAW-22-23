@@ -39,17 +39,17 @@
         <div>
             <label for="gender">Gender:</label>
             <div>
-                <input type="radio" name="gender" id="">Male
-                <input type="radio" name="gender" id="">Female
-                <input type="radio" name="gender" id="">Other
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="other">Other
             </div>
         </div>
         <div>
             <label for="vehicles">Owned vehicles:</label>
             <div>
-                <input type="checkbox" name="vehicles" id="">Car
-                <input type="checkbox" name="vehicles" id="">Motorbike
-                <input type="checkbox" name="vehicles" id="">Bycicle
+                <input type="checkbox" name="vehicles" value="car">Car
+                <input type="checkbox" name="vehicles" value="motorbike">Motorbike
+                <input type="checkbox" name="vehicles" value="bycicle">Bycicle
             </div>
         </div>
         <div>
@@ -85,10 +85,42 @@
     <h2>Formulario de alquiler de vehículos</h2>
 
     <form class="renting" action="">
-        <label for="">Por favor</label>
+        <label for="tipos">Por favor, seleccione un tipo de vehículo</label>
+        <!-- El selector nos da a elegir entre un conjuntos de opciones preestablecidas -->
+        <select name="tipos" id="">
+            <option value="coche">Coche</option>
+            <option value="moto">Moto</option>
+            <option value="furgoneta">Furgoneta</option>
+        </select>
 
+        <br>
+
+        <label for="marcas">Seleccione marca del vehículo</label>
+        <input name="marcas" list="marcas">
+        <!-- Datalist + input nos genera un cuadro de inserción de datos con una lista de sugerencias -->
+        <datalist id="marcas">
+            <option value="Fiat"></option>
+            <option value="Citröen"></option>
+            <option value="Renault"></option>
+            <option value="Audi"></option>
+        </datalist>
+
+        <br>
+        <input type="submit">
+
+
+    </form>
+
+    <h2>Formulario de inicio de sesión o login</h2>
+
+    <form action="" class="login">
+        <input name="user" type="text" placeholder="Ingrese usuario">
+        <br>
+        <input name="password" type="password" placeholder="Inserte contraseña">
+        <br>
+        <input type="submit">
     </form>
 
 </body>
 
-</html>
+ 
