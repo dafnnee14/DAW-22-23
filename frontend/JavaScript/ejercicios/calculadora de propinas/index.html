@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de propinas con JavaScript</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -15,7 +17,7 @@
             <p>
                 Gasto total de la cuenta:
             </p>
-            <input type="number"> €
+            <input name="inputCuenta" id="cuentaTotal" type="text"> €
         </div>
 
         <div>
@@ -36,7 +38,7 @@
             <p>
                 Número de comensales:
             </p>
-            <input type="number"> personas.
+            <input id="numPersonas" type="number"> personas.
         </div>
 
         <div>
@@ -46,7 +48,10 @@
         <div>
             <p id="pResultado">Resultado</p>
         </div>
+
+        <button onclick="test()">Probar</button>
     </div>
     
 </body>
+<script src="script.js"></script>
 </html>
