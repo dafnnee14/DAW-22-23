@@ -51,10 +51,14 @@ body {
     font-size: 18px;
     font-weight: bold;
     color: white;
-    background: #258ef6;
+    background: rgba(34, 142, 250, 0.7);
     border-radius: 10px;
     border: none;
 }
+.container button:hover {
+    background: #228efa;
+    cursor: pointer;
+} 
 
 #divResultado {
     background: #001333;
