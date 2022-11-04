@@ -17,7 +17,9 @@
             <p>
                 Gasto total de la cuenta:
             </p>
-            <input name="inputCuenta" id="cuentaTotal" type="text"> €
+            <p>
+                <input name="inputCuenta" id="cuentaTotal" type="number"> €
+            </p>
         </div>
 
         <div>
@@ -33,23 +35,26 @@
                 <option value="0.3">★★★★★</option>
             </select>
         </div>
-
+ 
         <div>
             <p>
                 Número de comensales:
             </p>
-            <input id="numPersonas" type="number"> personas.
+            <p>
+                <input id="numPersonas" type="number"> personas.
+            </p>
+            
         </div>
 
         <div>
-            <button>Calcular!</button>
+            <button onclick="calcularPropina()">Calcular!</button>
         </div>
 
-        <div>
+        <div id="divResultado">
             <p id="pResultado">Resultado</p>
         </div>
 
-        <button onclick="test()">Probar</button>
+        
     </div>
     
 </body>
