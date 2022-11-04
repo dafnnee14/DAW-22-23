@@ -1,15 +1,15 @@
 function calcularPropina() {
     // Tomamos los datos que ha introducido el usuario
-    var cuenta = document.getElementById('cuentaTotal').value;
-    var servicio = document.getElementById('calidadServ').value;
-    var personas = document.getElementById('numPersonas').value;
+    let cuenta = document.getElementById('cuentaTotal').value;
+    let servicio = document.getElementById('calidadServ').value;
+    let personas = document.getElementById('numPersonas').value;
 
-    // Calculo la propina que debe pagar cada uno y lo guardo en una variable
-    var resultado = cuenta * servicio / personas; //resultado = 1.43733
+    // Calculo la propina que debe pagar cada uno y lo guardo en una letiable
+    let resultado = cuenta * servicio / personas; //resultado = 1.43733
     // resultado = resultado.toFixed(2);          //resultado = 1.44  
 
     // Accedo al elemento donde quiero imprimir el resultado
-    var parrafo = document.getElementById('pResultado');
+    let parrafo = document.getElementById('pResultado');
 
     if (resultado > 0) {
         // Lo muestro porque está oculto por defecto
