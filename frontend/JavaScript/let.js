@@ -28,7 +28,6 @@
 }
 console.log(y + 1);
 
-
 // Hoisting
 // let coche;
 coche = 'seat panda';
