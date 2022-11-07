@@ -2,9 +2,6 @@
 // Date() es un objeto predefinido en JavaScript que contiene todos los datos de fecha y hora actualizados. 
 // De este objeto podemos obtener, por ejemplo, la hora actual de cualquier zona horaria y el día de la semana en el que estamos, etc.
 
-
-
-
 function clock() {
     // Creamos una copia del objeto fecha
     let fecha = new Date();
@@ -45,5 +42,46 @@ function clock() {
     // Al final de la función, clock() se va a ejecutar a sí tras una pausa de 1 seg (1000 ms). Creando así un bucle.
 }
 
+function displayDate() {
+    let fecha = new Date();
+
+    let diaSemana = fecha.getDay();
+    let diaMes = fecha.getDate();
+    let mes = fecha.getMonth();
+    let year = fecha.getFullYear();
+
+    let texto = '';
+
+    const dias = [
+        "domingo", 
+        "lunes",
+        "martes",
+        "miércoles",
+        "jueves",
+        "viernes",
+        "sábado"
+    ];
+    const meses = [
+        'enero',
+        'febrero',
+        'marzo',
+        'abril',
+        'mayo',
+        'junio',
+        'julio',
+        'agosto',
+        'septiembre',
+        'octubre',
+        'noviembre',
+        'diciembre'
+    ];
+
+    texto = dias[diaSemana] + ', ' + diaMes + ' de ' + meses[mes] + ' de ' + year;
+
+    document.getElementById('pantallaFecha').innerHTML = texto;
+}
+
 // Inicializar la función
 clock();
+displayDate();
+
