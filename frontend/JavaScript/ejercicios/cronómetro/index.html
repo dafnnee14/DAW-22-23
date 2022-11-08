@@ -9,7 +9,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="display"><span id="minutos">00</span>:<span id="segundos">00</span>:<span id="cents">00</span></h1>
+    <h1 id="display">
+        <div class="number">
+            <span id="minutos">00</span>
+        </div>
+
+        <div>:</div>
+
+        <div class="number">
+            <span id="segundos">00</span>
+
+        </div>
+        <div>:</div>
+
+        <div class="number">
+            <span id="cents">00</span>
+
+        </div>
+    </h1>
 
     <div>
         <button id="btnStart" onclick="startCrono()">START</button>
