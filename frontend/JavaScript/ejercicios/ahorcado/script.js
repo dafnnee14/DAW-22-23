@@ -74,6 +74,8 @@ for (let i = 0; i < botones.length; i++) {
 let aciertos = [];
 // Contador aciertos
 let contador = 0;
+// Vidas del usuario, si se agotan pierde la partida
+let vidas = 5;
 
 // Digamos que tenemos la palabra "perro" y pulsamos la "o"
 // Queremos guardar aquellas letras que hemos acertado
@@ -106,6 +108,9 @@ function juego() {
     // Transformo la letra en minúscula
     letra = letra.toLowerCase();
 
+    // Contamos los éxitos cada vez que pulsamos un botón, si no hay, restamos una vida
+    let exitos = 0;
+
     // Recorremos la palabra, caracter a caracter, en busca de coincidencias con la letra pulsada
     for (let i = 0; i < palabra.length; i++) {
         console.log(palabra[i]);
@@ -118,6 +123,7 @@ function juego() {
 
             // Cada vez que hay un acierto, el contador aumenta
             contador++;
+            exitos++;
         } else if (!aciertos[i]) {
             // Si entra en el else, es que no han habido coincidencias
             // La condición if() sólo se cumple cuando la posición i del array no tiene ningún valor
@@ -125,6 +131,14 @@ function juego() {
         }
         console.log(texto);
         console.log(aciertos);
+    }
+
+    // Si no hay éxitos al pulsar el botón me resto una vida
+    if (exitos == 0) {
+        vidas--;
+        this.style.backgroundColor = 'red';
+    } else {
+        this.style.backgroundColor = 'green';
     }
 
     // Creamos el string para imprimir en pantalla y le quitamos las comas del array
