@@ -68,3 +68,36 @@ for (let i = 99; i >= 3; i = i - 3) {
 display.innerHTML = texto;
 // display.innerHTML = pares.join('<br>');
 // display.innerHTML = arrayNumeros;
+
+
+// Números pares hasta el 100, y que cada vez que salga un múltiplo de 5 vaya en negrita
+
+let txt = '';
+
+for (let i = 2; i <= 100; i = i + 2) {
+
+    // Si se divide i entre 5 y no hay residuo(decimales), entra en el if
+    if (i % 5 == 0) {
+        txt += "<b>" + i + "</b><br>";
+    } else {
+        txt += i + "<br>";
+    }
+
+}
+
+display.innerHTML = txt;
+
+// Cuenta atrás en un array
+
+let countdown = [];
+let index = 0;
+
+for (let j = 100; j >= 0; j--) {
+
+    countdown[index] = j;
+    index++;
+}
+
+
+console.log(countdown)
+display.innerHTML = countdown.join('<br>');
