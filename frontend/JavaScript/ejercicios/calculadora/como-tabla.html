@@ -42,10 +42,10 @@
             </td>
         </tr>
         <tr>
-            <td>+</td>
-            <td>-</td>
-            <td>x</td>
-            <td>&#247</td>
+            <td id="suma">+</td>
+            <td id="resta">-</td>
+            <td id="multi">&times;</td>
+            <td id="division">&#247;</td>
         </tr>
         <tr>
             <td>7</td>
@@ -71,5 +71,15 @@
     </table>
 
 </body>
+<script>
+    const btnSuma = document.getElementById('suma');
 
+    btnSuma.onclick = () => {
+        console.log('estas sumando')
+
+        // resultado = valor1 + valor2
+        // input.value = resultado;
+    }
+
+</script>
 </html>

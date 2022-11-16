@@ -33,6 +33,8 @@ function write() {
 // limpiar la pantalla al pulsar el botón C
 clear.onclick = () => {
     input.value = 0;
+    value1, value2 = 0;
+    operator = '';
 }
 
 
@@ -44,7 +46,7 @@ for (let i = 0; i < operators.length; i++) {
 function operate() {
     // lo primero es identificar el operador que hemos clicado
     operator = this.innerHTML;
-    value1 = parseInt(input.value);
+    value1 = parseFloat(input.value);   // un float es un numero con decimales
     input.value = '';
     console.log(operator);
 
@@ -81,7 +83,7 @@ function operate() {
 }
 
 result.onclick = () => {
-    value2 = parseInt(input.value);
+    value2 = parseFloat(input.value);
 
     switch (operator) {
         case '+':
