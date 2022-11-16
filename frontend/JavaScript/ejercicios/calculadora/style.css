@@ -17,6 +17,7 @@ body {
     flex-wrap: wrap;
 
     border-radius: 15px;
+    padding: 10px 0;
     background: white;
 
     position: fixed;
@@ -33,9 +34,6 @@ body {
     justify-content: space-between;
 }
 
-.container .operators {
-    
-}
 .container button {
     width: 50px;
     height: 30px;
@@ -77,8 +75,10 @@ body {
 .numbers button {
     margin-bottom: 10px;
 }
-.numbers .zero {
-    width: 120px;
+.numbers .clear {
+    color: white;
+    background: tomato;
+    border: none;
 }
 
 .container .equal {
