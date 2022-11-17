@@ -50,35 +50,35 @@ function operate() {
     input.value = '';
     console.log(operator);
 
-    if (operator == '+') {
-        // se suma
-    } else if (operator == '-') {
-        // se resta
-    } else if (operator == '×') {
-        // se multiplica
-    } else if (operator == '÷') {
-        // se divide
-    }
+    // if (operator == '+') {
+    //     // se suma
+    // } else if (operator == '-') {
+    //     // se resta
+    // } else if (operator == '×') {
+    //     // se multiplica
+    // } else if (operator == '÷') {
+    //     // se divide
+    // }
 
-    switch (operator) {
-        case '+':
-            // se suma
-            console.log('has pulsado la suma');
-            break;
-        case '-':
-            // se resta
-            break;
-        case '×':
-            // se multiplica
-            break;
-        case '÷':
-            // se divide
-            break;
+    // switch (operator) {
+    //     case '+':
+    //         // se suma
+    //         console.log('has pulsado la suma');
+    //         break;
+    //     case '-':
+    //         // se resta
+    //         break;
+    //     case '×':
+    //         // se multiplica
+    //         break;
+    //     case '÷':
+    //         // se divide
+    //         break;
 
-        default:
-            console.log('el operador ha fallado');
-            break;
-    }
+    //     default:
+    //         console.log('el operador ha fallado');
+    //         break;
+    // }
 
 }
 
@@ -95,12 +95,15 @@ result.onclick = () => {
             break;
         case '-':
             // se resta
+            input.value = value1 - value2;
             break;
         case '×':
             // se multiplica
+            input.value = value1 * value2;
             break;
         case '÷':
             // se divide
+            input.value = value1 / value2;
             break;
 
         default:
